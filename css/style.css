@@ -74,7 +74,9 @@ input[type='text'] {
 	flex-direction: column;
 }
 /* Font */
-
+#temp {
+	font-size: 58px;
+}
 /* Styles or Media Queries*/
 @media screen and (min-width: 960px) {
 	body {
