@@ -9,10 +9,15 @@ search.addEventListener('keypress', getQuery);
 
 function getQuery(event) {
 	if (event.keyCode == 13) {
-		url = firstUrl + `${search.value}` + secondUrl;
-		getWeather();
+		//url = firstUrl + `${search.value}` + secondUrl;
+		getUrl();
 	}
 }
+
+let getUrl = () => {
+	url = firstUrl + `${search.value}` + secondUrl;
+	getWeather();
+};
 
 let getWeather = async () => {
 	const res = await fetch(url);
@@ -65,7 +70,7 @@ function displayResult(weather) {
     <span id="date"><p>${dateNow}</p></span>
     <span id="climate">
       <img
-        src="http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png"
+        src="/assets/seasonIcons/${weather.weather[0].icon}@2x.png"
         alt=""
         srcset=""
       />
@@ -100,6 +105,13 @@ function displayResult(weather) {
 			break;
 		case 'hurricane':
 			body.style.backgroundImage = "url('/assets/seasonImages/hurricane.jpg')";
+			break;
+		case 'thunderstrom':
+			body.style.backgroundImage =
+				"url('/assets/seasonImages/thunderStrom.jpg')";
+			break;
+		case 'snow':
+			body.style.backgroundImage = "url('/assets/seasonImages/snow.jpg')";
 			break;
 		default:
 			body.style.backgroundImage = "url('/assets/seasonImages/haze.jpg')";
