@@ -5,12 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather</title>
+		<link rel="icon" href="/assets/seasonIcons/mainIcon.png" />
 		<link rel="stylesheet" href="./css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body id="body">
 		<div class="main-wrap">
 			<header>
+				<div id="heading">
+					<h3>Please Enter your City name</h3>
+				</div>
 				<div class="container search">
 					<div class="searchContent">
 						<input type="text" id="searchBox" placeholder="Search city..." />
@@ -18,7 +22,11 @@
 					</div>
 				</div>
 			</header>
-			<main id="contentHolder"></main>
+			<main class="container" id="contentHolder">
+				<p>
+					You can enter your city name to know its current weather conditions.
+				</p>
+			</main>
 			<footer></footer>
 		</div>
 		<script src="./js/jquery-3.6.0.min.js"></script>
