@@ -137,7 +137,7 @@ function displayResult(weather) {
 			body.style.backgroundImage = "url('/assets/seasonImages/hurricane.jpg')";
 			break;
 
-		// Thinderstrom
+		// Thunderstrom
 		case 'thunderstrom':
 			body.style.backgroundImage =
 				"url('/assets/seasonImages/thunderStrom.jpg')";
@@ -146,6 +146,12 @@ function displayResult(weather) {
 		// Snow
 		case 'snow':
 			body.style.backgroundImage = "url('/assets/seasonImages/snow.jpg')";
+			break;
+
+		//Rain
+		case 'rain':
+			body.style.color = 'white';
+			body.style.backgroundImage = "url('/assets/seasonImages/rain.jpg')";
 			break;
 
 		default:
