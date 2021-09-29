@@ -38,10 +38,12 @@ body {
 	margin: 25px;
 }
 #contentHolder p,
-#errorContent{
-	text-align: center;
+#errorContent {
 	margin: 20px;
 	font-size: 20px;
+}
+#date p {
+	margin-bottom: 0px;
 }
 .search {
 	display: flex;
