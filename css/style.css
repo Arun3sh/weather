@@ -37,10 +37,9 @@ body {
 	text-align: center;
 	margin: 25px;
 }
-#errorContent {
-	font-size: 20px;
-}
-#contentHolder p {
+#contentHolder p,
+#errorContent{
+	text-align: center;
 	margin: 20px;
 	font-size: 20px;
 }
