@@ -33,6 +33,17 @@ body {
 		rgba(0, 0, 0, 0.6)
 	);
 }
+#heading {
+	text-align: center;
+	margin: 25px;
+}
+#errorContent {
+	font-size: 20px;
+}
+#contentHolder p {
+	margin: 20px;
+	font-size: 20px;
+}
 .search {
 	display: flex;
 	justify-content: center;
